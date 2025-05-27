@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>John Doe</h1>
+    <p>Computer Science Student | Web Developer</p>
+    <nav>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>B.Sc. in Computer Science, XYZ University (2021 - 2025)</p>
+    <p>Current GPA: 8.7 / 10</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Personal website to showcase my projects and skills.</p>
+      </div>
+      <div class="card">
+        <h3>To-Do App</h3>
+        <p>Simple to-do app with JavaScript and localStorage.</p>
+      </div>
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>Fetches weather data from API and displays it beautifully.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <p>HTML</p>
+        <div class="progress"><div class="progress-bar" style="width: 90%;">90%</div></div>
+        <p>CSS</p>
+        <div class="progress"><div class="progress-bar" style="width: 85%;">85%</div></div>
+        <p>JavaScript</p>
+        <div class="progress"><div class="progress-bar" style="width: 75%;">75%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 John Doe. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
